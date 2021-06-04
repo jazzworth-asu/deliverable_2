@@ -1,0 +1,46 @@
+Entity,Attribute,Data Type,MySql Data Types
+Officer,Officer_id,number,INT NOT NULL AUTO_INCREMENT
+Officer,Fname,string,VARCHAR(50) NOT NULL
+Officer,Lname,string,VARCHAR(50) NOT NULL
+Officer,Age,number  ,INT UNSIGNED NOT NULL
+Officer,Number,string,VARCHAR(20) NOT NULL
+Officer,Street,string,VARCHAR(50) NOT NULL
+Officer,Apt_num,string,VARCHAR(20) NOT NULL
+Officer,City,string,VARCHAR(50) NOT NULL
+Officer,State,string,VARCHAR(2) NOT NULL
+Officer,Zip,number,VARCHAR(20) NOT NULL
+Volunteers,Volunteer_id,number,INT NOT NULL AUTO_INCREMENT
+Volunteers,Fname,string,VARCHAR(50) NOT NULL
+Volunteers,Lname,string,VARCHAR(50) NOT NULL
+Volunteers,Age,number,INT UNSIGNED NOT NULL
+Volunteers,Number,string,VARCHAR(20) NOT NULL
+Volunteers,Street,string,VARCHAR(50) NOT NULL
+Volunteers,Apt_num,string,VARCHAR(20) NOT NULL
+Volunteers,City,string,VARCHAR(50) NOT NULL
+Volunteers,State,string,VARCHAR(2) NOT NULL
+Volunteers,Zip,number,VARCHAR(20) NOT NULL
+Volunteer_event,Event_id,number,INT NOT NULL AUTO_INCREMENT
+Volunteer_event,Event_name,string,VARCHAR(255) NOT NULL
+Volunteer_event,Mission,string,VARCHAR(255) NOT NULL
+Volunteer_event,Objectives,string,VARCHAR(255) NOT NULL
+Volunteer_event,Phone,number,VARCHAR(20) NOT NULL
+Volunteer_event,Officer_in_charge,string,INT NOT NULL
+Volunteer_event,Number,string,VARCHAR(20) NOT NULL
+Volunteer_event,Street,string,VARCHAR(50) NOT NULL
+Volunteer_event,Apt_num,string,VARCHAR(20) NOT NULL
+Volunteer_event,City,string,VARCHAR(50) NOT NULL
+Volunteer_event,State,string,VARCHAR(2) NOT NULL
+Volunteer_event,Zip,number,VARCHAR(20) NOT NULL
+Volunteer_event,Date_of_volunteer,date,DATE
+Joins_an_event,Volunteer_id,number,INT NOT NULL
+Joins_an_event,Event_id,number,INT NOT NULL
+Joins_an_event,event_of_interest,number,INT(1)
+Joins_an_event,Start_date,date,DATE
+Joins_an_event,End_date,date,DATE
+Office ,Office_id,number,INT NOT NULL AUTO_INCREMENT
+Office ,Job_title,string,VARCHAR(255)
+Office ,Responsibilites,string,VARCHAR(255)
+Holds_an_office,Office_id,number,INT
+Holds_an_office,Officer_id,number,INT
+Holds_an_office,Start_date,date,DATE NOT NULL
+Holds_an_office,End_date,date,DATE
