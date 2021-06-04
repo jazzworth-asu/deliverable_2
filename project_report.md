@@ -34,6 +34,14 @@ Using the completed diagrams and data types table, the team set about creating a
 
 # **User Manual**
 
+The documents including two set of files. First, the relational diagram and constraint file which covers all the details about the entities, attributes, and any possible constraints. The items can be found in the relational_diagrams.pdf file.
+
+The second set of files is the MySQL script which is being covered in impact_create_db.sql file and contains all the necessary SQL script to be executed to create the database tables.
+
+To execute the script, first make sure you have installed MySQL server on the system and the credentials have been set up properly. After starting up MySQL server successfully, you can open up a database design tool such as MySQL Workbench, connect it to your local database server, and then in terminal section copy and paste all the script, finally from top menu choose Query and then hit the first Execute option.
+
+After successful execution, you will see the tables list under "impact" schema.
+
 # **Conclusion**
 
 
